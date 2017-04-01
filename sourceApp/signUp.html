@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/layout.css">
+    	<link rel="stylesheet" href="css/comm.css" />
+    	<style>
+    		.user-img p{
+    			text-align:center;
+    			line-height:30px;
+    			font-size:1rem;
+    		}
+    		.idCode{
+    			position:relative;
+    			
+    		}
+    		.idCode input{
+    			
+    		}
+    		.idCode a{
+    			padding:2px;
+    			position:absolute;
+    			top:7.5px;
+    			right:10px;
+    			color:#fff !important;
+    			font-size:0.8rem;
+    			background:#ec4b1f;
+    		}
+    		.sign-form{
+    			width:96%;
+    			margin:0 auto;
+    		}
+    		.sign-form button{
+    			width:100%;
+    			background:#0f2646;
+    			color:#8b9bb1;
+    			border-radius:5px;
+    			height:40px;
+    		}
+    		.mui-popup{
+    			border-radius:4px;
+    		}
+    		
+    		.mui-popup-inner{
+    			padding:0;
+    		}
+    		.mui-popup-title{
+    			height:30px;
+    			background:#0f2646;
+    			line-height:30px;
+    			color:#fff;
+    			text-align:left;
+    			font-size:12px;
+    			padding-left:15px;
+    		}
+    		.mui-popup-text{
+    			min-height:50px;
+    			line-height:30px;
+    			font-size:18px !important;
+    		}
+    		.mui-popup-text p{
+    			text-align:right;
+    			padding-right:5px;
+    			line-height:22px;
+    			font-size:12px;
+    		}
+    		.mui-popup-button{
+    			border-radius:0 !important;
+    			color:#000;
+    		}
+    	</style>
+	</head>
+
+	<body>
+		<!--顶部-->
+		<header id="header" class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">注册</h1>
+		</header>
+		<div class="mui-content">
+		    <div class="user-img">
+    	    	<div class="img-center">
+    	    		<img src=""/>
+    	    	</div>
+    	    	<p>设置头像</p>
+    	    </div>
+		    <div class="sign-form">
+		    	<input type="text" id="username" placeholder="用户名"/>
+		    	<input type="text" id="phone" placeholder="手机号"/>
+		    	<div class="idCode">
+		    	<input type="text" id="idCode" placeholder="验证码"/>
+		    	<a id="getCode" href="javaScript:;">获取验证码</a>
+		    	</div>
+		    	<input type="password" id="password" placeholder="密码"/>
+		    	<input type="password" id="repassword" placeholder="确认密码"/>
+		    	<button id='confirmBtn' type="button" disabled="true">完成</button>
+		    </div>
+		    
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			//发送get请求
+			function getData(url, callback){  
+			    mui.ajax(url,{  
+			        dataType:'json',  
+			        type:'get',  
+			        contentType:"application/x-www-form-urlencoded; charset=utf-8",  
+			        timeout:60000,  
+			        success:callback,  
+			        error:function(xhr,type,errorThrown){   
+			            mui.alert("<网络连接失败，请重新尝试一下>", "错误", "OK", null);  
+			        }  
+			    });  
+			}
+			
+			var username = document.getElementById('username');
+			var phone = document.getElementById('phone');
+			var getCode = document.getElementById('getCode');
+			var idCode = document.getElementById('idCode');
+			var pwd = document.getElementById('password');
+			var repwd = document.getElementById('repassword');
+			var ok1=0,ok2=0,ok3=0,ok4=0,ok5=0
+			//用户名的验证
+			username.onblur = function(){
+				var re=/[^\w\U4e00-\U9fa5]/g;// \U4e00-\U9fa5表示所有中文字符，匹配所有的非法字符
+				if(re.test(this.value)){
+					mui.alert("含有非法字符");
+				}else if(this.value == ""){
+					mui.alert("用户名不能为空");
+				}else if(this.value.length>16){
+					mui.alert("长度不能大于16");
+				}else{
+					getData('data/username.json',function(data){
+						if(data.result != "checkOK"){  
+					        mui.alert("用户名重复");  
+					        return;  
+					    }
+					})
+				}
+				ok1=username.value.length;
+			}
+			
+			phone.onblur = function(){
+				ok2=this.value.length;
+			}
+			idCode.onblur = function(){
+				ok3=this.value.length;
+			}
+			
+			repwd.onblur = function(){
+				ok5=this.value.length; 
+			}
+			//手机号的验证
+			getCode.addEventListener('tap',function(){
+				if(phone.value.length < 11){
+					mui.alert("请输入合法的手机号");
+				}else{
+					getData('data/phone.json',function(data){
+						if(data.result != "checkOK"){  
+						    mui.alert("该手机已被注册");  
+						    return;  
+						}
+					})
+				}
+				ok2=idCode.value.length
+			}) 
+			//验证码的验证
+			
+			
+			
+			
+			
+			
+			//密码的验证
+			 pwd.onblur = function(){
+            	var repexNum = /[^0-9]/g;//匹配所有不是数字的字符
+            	var repexWor = /[^a-zA-Z]/g;//匹配所有不是字母的字符
+            	if(this.value == ""){
+                	mui.alert("密码不能为空");
+            	}else if(this.value.length < 6 || this.value.length>16 ){
+                	mui.alert("密码长度为6-16之间");
+            	}else if(!repexNum.test(this.value)){
+                	mui.alert("密码不能全为数字");
+            	}else if(!repexWor.test(this.value)){
+               		mui.alert("密码不能全为字母");
+            	}
+            	ok4=this.value.length;
+           	}
+			
+			pwd.onfocus = function(){
+				if(ok1>0 && ok2>0 &&ok3>0){
+					pwd.onkeyup= function(){
+						if(this.value.length>0&&ok5>0){
+							document.getElementById("confirmBtn").disabled = false;
+						}else{
+							document.getElementById("confirmBtn").disabled = true;
+						}
+						
+					}
+				}
+			}
+			idCode.onfocus = function(){
+				if(ok1>0 && ok2>0 ){
+					idCode.onkeyup= function(){
+						if(this.value.length>0&&ok5>0&&ok3>0){
+							document.getElementById("confirmBtn").disabled = false;
+						}else{
+							document.getElementById("confirmBtn").disabled = true;
+						}
+						
+					}
+				}
+			}
+			phone.onfocus = function(){
+				if(ok1>0 ){
+					phone.onkeyup= function(){
+						if(this.value.length>0&&ok5>0&&ok3>0&&ok2>0){
+							document.getElementById("confirmBtn").disabled = false;
+						}else{
+							document.getElementById("confirmBtn").disabled = true;
+						}
+						
+					}
+				}
+			}
+			username.onfocus = function(){
+				username.onkeyup= function(){
+						if(this.value.length>0&&ok5>0&&ok3>0&&ok2>0&&ok3>0){
+							document.getElementById("confirmBtn").disabled = false;
+						}else{
+							document.getElementById("confirmBtn").disabled = true;
+						}
+						
+					}
+			}
+			
+			//注册提交button按钮变为可用状态
+			repwd.onkeyup= function(){
+				if(this.value.length>0 && ok1>0 && ok2>0 && ok3>0 && ok4>0){
+					document.getElementById("confirmBtn").disabled = false;
+				}else{
+					document.getElementById("confirmBtn").disabled = true;
+				}
+				
+			}
+
+				
+			
+			//确认密码的验证	
+			document.getElementById("confirmBtn").addEventListener('tap', function(){
+				var btnArray = ['取消', '确定'];
+				if(repwd.value != pwd.value){
+					mui.alert("两次输入的不一致")
+				}else{
+					mui.confirm('注册成功！\n是否前往登录?', '提醒', btnArray, function(e){
+						if (e.index == 1) {
+							window.location.href= "enter.html";
+						} else {
+							window.location.href= "";
+						}
+					})
+				}
+			});
+			
+			
+			
+		</script>
+	</body>
+
+</html>

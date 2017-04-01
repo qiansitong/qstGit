@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/layout.css">
+    	<link rel="stylesheet" href="css/comm.css" />
+    	<link href="css/mui.min.css" rel="stylesheet"/>
+    	<link rel="stylesheet" href="fonts/iconfont.css" />
+    	<style type="text/css">
+    		.icon-active{
+    			color:#0f2646;
+    			
+    		}
+    		.iconfont.down-arrow{
+    			text-align:center;
+    			cursor:pointer;
+    			color:#272636 !important;
+    		}
+    		.mui-table-view-cell.mui-active{
+    			background:#fff !important;
+    		}
+    		.mui-table-view-cell>a.mui-active{
+    			background:#fff !important;
+    		}
+    		.mui-table-view-cell:after{
+    			height:0 !important
+    		}
+    		.mui-table-view-chevron{
+    			padding:0 0 15px 20px;
+    		}
+    		.up-arrow{
+    			text-align:center;
+    			height:30px;
+    		}
+    		.up-arrow .up{
+    			width:17px;
+    			height:17px;
+    			
+    		}
+    		.mui-table-view-cell.mui-collapse .mui-table-view{
+    			margin-bottom:0 !important;
+    		}
+    		.radio:first-child{
+    			margin-top:10px;
+    		}
+    		.radio{
+    			margin:0 auto;
+    			width:10px;
+    			height:10px;
+    			border-radius:50%;
+    			background:#e1e1e1;
+    		}
+    		.produce-divider{
+    			margin:0 auto;
+    			width:1px;
+    			background-color:#e1e1e1;
+    		}
+    		.iconfont.vedio{
+    			color:#0f2646;
+    			font-size:24px;
+    			text-align:center;
+    			vertical-align: middle;
+    		}
+    	</style>
+	</head>
+
+	<body>
+		<!--顶部-->
+		<header id="header" class="mui-bar mui-bar-nav">
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href=""></a>
+            <h1 class="mui-title">正大溯源云平台</h1>
+    	</header>
+    	<!--主体部分-->
+    	<div class="mui-content">
+    	    <!-- 顶部导航 -->
+    		<nav>
+    			<ul>
+    				<li><a href="product.html">产品</a></li>
+    				<li><a href="produce.html">生产</a></li>
+    				<li><a href="company.html" >商家</a></li>
+    				<li><a href="vertify.html">质检</a></li>
+    				<li><a href="logistic.html" class="active">物流</a></li>
+    				<li><a href="price.html">参考价</a></li>
+    			</ul>
+    		</nav>
+    		
+    		<!--map-->
+    		<div class="map">
+    			<img src="img/index2.jpg" alt="" />
+    			<!--运送信息-->
+    		
+	    		<div class="trans-information">
+	    			<p class="trans-company">
+	    				<span class="pull-left">物流公司：</b></b>顺丰物流</span>
+	    		        <span class="pull-right"><b class="iconfont vedio">&#xe60e;</b>&nbsp;&nbsp;视频</span>
+	    			</p>
+	    			<div class="trans-content">
+	    				<ul>
+	    					<li>
+	    						<!--<div class="produce-line mui-pull-left">
+					    		    <div class="radio"></div>
+					    		    <div id="produce-divider" class="produce-divider"></div>
+					    		    <div class="radio"></div>
+				    	        </div>-->
+	    						<p>2015-03-16 &nbsp;&nbsp;14:08:12</p>
+	    						<p>您的快件已签收</p>
+	    						<li class="mui-table-view-cell mui-collapse">
+	    							<a class="iconfont down-arrow" style="display:block" href="#">&#xe619;</a>
+	    							<ul class="mui-table-view mui-table-view-chevron">
+										<p>物流车牌：WJ18-12345</p>
+										<p>货车司机：罗贯中</p>
+										<p>司机工号：0888208820</p>
+										<p>发货人：吴承恩</p>
+										<p>卸货人：施耐庵</p>
+									</ul>
+									<div class="up-arrow" style="display:none" href="#"><img class="up" src="img/up.png" alt="" /></div>
+	    						</li>
+	    						
+	    					</li>
+	    					<li>
+	    						<p>2015-03-16 &nbsp;&nbsp;07:08:12</p>
+	    						<p>您所订购的商品已到达【武汉航空中转部】，中转中</p>
+	    						<li class="mui-table-view-cell mui-collapse">
+	    							<a class="iconfont down-arrow" style="display:block" href="#">&#xe619;</a>
+	    							<ul class="mui-table-view mui-table-view-chevron">
+										<p>物流车牌：WJ18-12345</p>
+										<p>货车司机：罗贯中</p>
+										<p>司机工号：0888208820</p>
+										<p>发货人：吴承恩</p>
+										<p>卸货人：施耐庵</p>
+									</ul>
+									<div class="up-arrow" style="display:none" href="#"><img class="up" src="img/up.png" alt="" /></div>
+	    						</li>
+	    					</li>
+	    					<li>
+	    						<p>2015-03-15 &nbsp;&nbsp;19:08:12</p>
+	    						<p>您所订购的商品已从【武汉白沙洲分拣站】发货</p>
+	    						<li class="mui-table-view-cell mui-collapse">
+	    							<a class="iconfont down-arrow" style="display:block" href="#">&#xe619;</a>
+	    							<ul class="mui-table-view mui-table-view-chevron">
+										<p>物流车牌：WJ18-12345</p>
+										<p>货车司机：罗贯中</p>
+										<p>司机工号：0888208820</p>
+										<p>发货人：吴承恩</p>
+										<p>卸货人：施耐庵</p>
+									</ul>
+									<div class="up-arrow" style="display:none" href="#"><img class="up" src="img/up.png" alt="" /></div>
+	    						</li>
+	    					</li>
+	    					<li>
+	    						<p>2015-03-15 &nbsp;&nbsp;19:08:12</p>
+	    						<p>顺丰速递&nbsp;&nbsp;湖北省武汉市白沙洲收件员已揽件</p>
+	    						<li class="mui-table-view-cell mui-collapse">
+	    							<a class="iconfont down-arrow" style="display:block" href="#">&#xe619;</a>
+	    							<ul class="mui-table-view mui-table-view-chevron">
+										<p>物流车牌：WJ18-12345</p>
+										<p>货车司机：罗贯中</p>
+										<p>司机工号：0888208820</p>
+										<p>发货人：吴承恩</p>
+										<p>卸货人：施耐庵</p>
+									</ul>
+									<div class="up-arrow" style="display:none" href="#"><img class="up" src="img/up.png" alt="" /></div>
+	    						</li>
+	    					</li>
+	    					<li>
+	    						<p>2015-03-15 &nbsp;&nbsp;19:08:12</p>
+	    						<p>包裹正在等待收揽</p>
+	    						<li class="mui-table-view-cell mui-collapse">
+	    							<a class="iconfont down-arrow" style="display:block" href="#">&#xe619;</a>
+	    							<ul class="mui-table-view mui-table-view-chevron">
+										<p>物流车牌：WJ18-12345</p>
+										<p>货车司机：罗贯中</p>
+										<p>司机工号：0888208820</p>
+										<p>发货人：吴承恩</p>
+										<p>卸货人：施耐庵</p>
+									</ul>
+									<div class="up-arrow" style="display:none" href="#"><img class="up" src="img/up.png" alt="" /></div>
+	    						</li>
+	    					</li>
+	    					<li></li>
+	    				</ul>	
+	    			</div>
+	    		</div>
+    		</div>
+    	</div>
+		<!--底部导航-->
+        <footer>
+        	<nav class="mui-bar mui-bar-tab">
+	           <a class="mui-tab-item" href="vertify.html" >
+	           		<span class="mui-icon vertify icons"></span>
+	           		<span class="mui-tab-label words">防伪溯源</span>
+	           </a>
+	           <a class="mui-tab-item" href="aliance.html">
+	           		<span class="mui-icon aliance icons"></span>
+	           		<span class="mui-tab-label words">商家联盟</span>
+	           </a>
+	           <a class="mui-tab-item" href="produce.html">
+	           		<span class="mui-icon product-center icons"></span>
+	           		<span class="mui-tab-label words">产品中心</span>
+	           </a>
+	           <a class="mui-tab-item" href="more.html">
+	           		<span class="mui-icon more-active icons"></span>
+	           		<span class="mui-tab-label words">更多</span>
+	           </a>
+            </nav>
+        </footer>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui('body').on('tap','.mui-table-view-cell',function(){
+					var down = this.querySelector('.iconfont.down-arrow');
+			    	var up = this.querySelector('.up-arrow');
+					if(down.style.display == 'block' && up.style.display == 'none'){
+						down.style.display = 'none';
+						up.style.display = 'block';	
+					}else{
+						down.style.display = 'block';
+						up.style.display = 'none';	
+					}
+			})
+					
+//			//js方法设置线的高度
+//			var divider = document.getElementsByClassName('produce-divider');
+//			var itemHeight = document.getElementById('produce-content').getElementsByTagName("li");
+//			for(var i=0;i<divider.length;i++)
+//				divider[i].style.height = itemHeight[i].offsetHeight+"px";
+//				
+			
+			
+		</script>
+	</body>
+
+</html>

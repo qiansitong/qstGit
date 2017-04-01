@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>产品中心</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/layout.css">
+    	<link rel="stylesheet" href="css/comm.css" />
+    	<link href="css/mui.min.css" rel="stylesheet"/>
+    	<style>
+    		a{
+    			color:#b9b9b9 !important;
+    		}
+    		.mui-bar{
+    			box-shadow:none;
+    		}
+    		.mui-table-view:after{
+    			background:#fff !important;
+    		}
+    		.mui-table-view:before{
+    			background:#fff !important;
+    		}
+    		.mui-media-body{
+    			text-align: center;
+    		}
+    		.mui-table-view:before{background:#fff;}
+    		.mui-table-view-cell{padding-top:0;padding-bottom:0;padding-right:0 !important;}
+    		.box{
+    			width:90px;
+    			margin-top:4px;
+    			padding:5px 0 5px 20px;
+    			display:block;
+    			border:1px solid #d6d7dc;
+    			
+    		}
+    		.box>a{
+    			color:#ccc !important;
+    			padding:0 !important;
+    			
+    		}
+    		 .box.mui-active{
+    		 	background-color:#fafafa !important;
+    			margin-top:4px !important;
+    		}
+    		.mui-table-view-cell>a.mui-active{
+    			background:#fff !important;
+    		}
+    		.collapse-body{
+    			width:100%;
+    			z-index:999;
+    			position:absolute;
+    			background:#fafafa;
+    			left:0;
+    			top:38px;
+    		}
+    		.mui-table-view-cell:after{
+    			background:#fff !important;
+    		}
+    		.collapse-body li{
+    			padding-left:15px;
+    			border-bottom:1px solid #eee;
+    		}
+    		.iconfont{
+    			color:#ec4b1f !important;
+    		}
+    	</style>
+	</head>
+
+	<body>
+    	<!--主体部分-->
+    	<div class="mui-content">
+    		<!--头部部分功能-->
+    	    <div class="item-information" id="item_info">
+		    	<label>产品分类</label>
+		    	<label>
+		    		<div class="mui-table-view-cell box mui-collapse">
+		    		<a id="select" class="mui-navigate-right" href="javascript:;" style="">全部产品</a>
+            		 </div>
+            		<ul id="collapse-body" class="mui-collapse-content collapse-body" style="display:none;">
+		    		  	<li><a href="">全部产品</a></li>
+		    		  	<li><a href="">食品</a></li>
+		    		  	<li><a href="">药品</a></li>
+		    		  	<li><a href="">护肤品</a></li>
+		    		  	<li><a href="">奢侈品</a></li>
+		    		  	<li><a href="">服装</a></li>
+		    		  	<li><a href="">建材</a></li>
+		    		  	<li><a href="">生活用品</a></li>
+		    		  	<li><a href="">金融理财产品</a></li>
+		    		  </ul>
+		    		 
+		    	</label>
+		    	<label>排序</label>
+		    	<p>
+		    		<span class="selected">默认</span>
+		    		<span>销量</span>
+		    		<span>价格</span>
+		    	</p>
+		    	<a class="search" href=""></a>
+		    </div>
+		    <!--产品展示-->
+		    <div class="product-center-item">
+		    <ul class="mui-table-view mui-grid-view">
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="img/product1.jpg">
+		                <div class="mui-media-body">
+		                	<p>石门山涧黄淮两瓶装蜂蜜</p>
+		                </div>
+		                <div class="sale-info">
+		                	<div class="sale-price">
+		                		<span>￥</span>
+		                		<span>340</span>
+		                	</div>
+		                	<div class="sale-data">
+		                		<span>月销量:</span>
+		                		<span>1990件</span>
+		                	</div>
+		                	<div class="sale-address">
+		                		<span>重庆</span>
+		                	</div>
+		                </div>
+		            </a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="img/product2.jpg">
+		                <div class="mui-media-body"><p>石门山涧黄淮两瓶装蜂蜜</p></div>
+		            	<div class="sale-info">
+		                	<div class="sale-price">
+		                		<span>￥</span>
+		                		<span>340</span>
+		                	</div>
+		                	<div class="sale-data">
+		                		<span>月销量:</span>
+		                		<span>1990件</span>
+		                	</div>
+		                	<div class="sale-address">
+		                		<span>重庆</span>
+		                	</div>
+		                </div>
+		            
+		            </a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#"><img class="mui-media-object" src="img/product3.jpg">
+		                <div class="mui-media-body"><p>石门山涧黄淮两瓶装蜂蜜</p></div>
+		            	<div class="sale-info">
+		                	<div class="sale-price">
+		                		<span>￥</span>
+		                		<span>340</span>
+		                	</div>
+		                	<div class="sale-data">
+		                		<span>月销量:</span>
+		                		<span>1990件</span>
+		                	</div>
+		                	<div class="sale-address">
+		                		<span>重庆</span>
+		                	</div>
+		              </div>
+		            </a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="img/product3.jpg">
+		                <div class="mui-media-body"><p>石门山涧黄淮两瓶装蜂蜜</p></div>
+		                <div class="sale-info">
+		                	<div class="sale-price">
+		                		<span>￥</span>
+		                		<span>340</span>
+		                	</div>
+		                	<div class="sale-data">
+		                		<span>月销量:</span>
+		                		<span>1990件</span>
+		                	</div>
+		                	<div class="sale-address">
+		                		<span>重庆</span>
+		                	</div>
+		                </div>
+		            </a></li>
+		                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="img/product1.jpg">
+		                <div class="mui-media-body"><p>石门山涧黄淮两瓶装蜂蜜</p></div>
+		                <div class="sale-info">
+		                	<div class="sale-price">
+		                		<span>￥</span>
+		                		<span>340</span>
+		                	</div>
+		                	<div class="sale-data">
+		                		<span>月销量:</span>
+		                		<span>1990件</span>
+		                	</div>
+		                	<div class="sale-address">
+		                		<span>重庆</span>
+		                	</div>
+		                </div>
+		            </a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="img/product2.jpg">
+		                <div class="mui-media-body"><p>石门山涧黄淮两瓶装蜂蜜</p></div>
+		            	<div class="sale-info">
+		                	<div class="sale-price">
+		                		<span>￥</span>
+		                		<span>340</span>
+		                	</div>
+		                	<div class="sale-data">
+		                		<span>月销量:</span>
+		                		<span>1990件</span>
+		                	</div>
+		                	<div class="sale-address">
+		                		<span>重庆</span>
+		                	</div>
+		                </div>
+		            </a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#"><img class="mui-media-object" src="img/product3.jpg">
+		                <div class="mui-media-body"><p>石门山涧黄淮两瓶装蜂蜜</p></div>
+		            	<div class="sale-info">
+		                	<div class="sale-price">
+		                		<span>￥</span>
+		                		<span>340</span>
+		                	</div>
+		                	<div class="sale-data">
+		                		<span>月销量:</span>
+		                		<span>1990件</span>
+		                	</div>
+		                	<div class="sale-address">
+		                		<span>重庆</span>
+		                	</div>
+		                </div>
+		            </a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="img/product3.jpg">
+		                <div class="mui-media-body"><p>石门山涧黄淮两瓶装蜂蜜</p></div>
+		            	<div class="sale-info">
+		                	<div class="sale-price">
+		                		<span>￥</span>
+		                		<span>340</span>
+		                	</div>
+		                	<div class="sale-data">
+		                		<span>月销量:</span>
+		                		<span>1990件</span>
+		                	</div>
+		                	<div class="sale-address">
+		                		<span>重庆</span>
+		                	</div>
+		                </div>
+		            </a></li>
+		    </ul>  
+		  </div>
+    	</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			//产品分类
+			var select = document.getElementById('select');
+			var selectContent = document.getElementById('collapse-body');
+			select.addEventListener('tap',function(){
+				if(selectContent.style.display == 'none'){
+					selectContent.style.display = 'block';
+				}else{
+					selectContent.style.display = 'none';
+				}
+			});
+			//筛选条件切换
+			var item_info = document.getElementById('item_info').getElementsByTagName('p')[0];
+			var conditions = item_info.getElementsByTagName('span');
+			mui.each(conditions,function(i,item){
+				item.addEventListener('tap',function(){
+					mui.each(conditions,function(i,item){
+					item.classList.remove('selected');
+					})
+					this.classList.add('selected');
+				})
+			})
+			//产品页面跳转
+			var details = mui('.mui-media');
+			mui.each(details,function(i,item){
+				item.addEventListener('tap',function(){
+					mui.openWindow({
+						id:'product',
+						url:'product.html'
+					})
+				})
+			})	
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>正大溯源云平台</title>
+    <script src="js/mui.min.js"></script>
+    <link rel="stylesheet" href="css/comm.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="fonts/iconfont.css" />
+    <style>
+    	.mui-bar-tab .mui-tab-item.mui-active{
+    		color:#0f2646 !important;
+    	}
+    </style>
+</head>
+<body>
+	<!-- 顶部 -->
+    	<header id="header" class="mui-bar mui-bar-nav">
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href=""></a>
+            <h1 class="mui-title mui-center">正大溯源云平台</h1>
+    	</header>
+    <!--底部导航-->
+        <footer>
+        	<nav id="nav" class="mui-bar mui-bar-tab">
+	           <a id="defaultTab" class="mui-tab-item mui-active" href="index2.html" >
+	           		<img class="mui-icon" src="img/icon/vertify-active.png" alt="" />
+	           		<span class="mui-tab-label">防伪溯源</span>
+	           </a>
+	           <a class="mui-tab-item" href="aliance.html">
+	           		<img class="mui-icon" src="img/icon/aliance.png" alt="" />
+	           		<span class="mui-tab-label">商家联盟</span>
+	           </a>
+	           <a class="mui-tab-item" href="product-center.html">
+	           		<img class="mui-icon" src="img/icon/product.png" alt="" />
+	           		<span class="mui-tab-label">产品中心</span>
+	           </a>
+	           <a class="mui-tab-item" href="more.html">
+	           		<img class="mui-icon" src="img/icon/more.png" alt="" />
+	           		<span class="mui-tab-label">更多</span>
+	           </a>
+            </nav>
+        </footer>
+    <script type="text/javascript" charset="utf-8">
+			 //mui初始化
+			mui.init();
+			var subpages = ['index2.html', 'aliance.html', 'product-center.html', 'more.html'];
+			var subpage_style = {
+				top:'45px',
+				bottom:'51px'
+			};
+			var aniShow = {};
+			
+			 //创建子页面，首个选项卡页面显示，其它均隐藏；
+			mui.plusReady(function() {
+				var self = plus.webview.currentWebview();
+				for (var i = 0; i < 4; i++) {
+					var temp = {};
+					var sub = plus.webview.create(subpages[i], subpages[i], subpage_style);
+					if (i > 0) {
+						sub.hide();
+					}else{
+						temp[subpages[i]] = "true";
+						mui.extend(aniShow,temp);
+					}
+					self.append(sub);
+				}
+			});
+			 //当前激活选项
+			var activeTab = subpages[0];
+			 //选项卡点击事件
+			mui('.mui-bar-tab').on('tap', 'a', function(e) {			
+				// 获取当前点击的选项
+				var targetTab = this.getAttribute('href');				
+				// 获取图标对象
+				var targetIcon=mui(this.children[0])[0];
+				// 初始化
+				mui('.mui-bar-tab .mui-tab-item img').each(function (index,item) {
+					var itemSrc = item.getAttribute('src');
+					if(itemSrc.indexOf('active')){
+						item.src = itemSrc.replace('-active.png','.png');
+					}
+				});
+				// 设置当前的图标
+				targetIcon.src = targetIcon.getAttribute('src').replace('.png','-active.png');	
+				//显示目标选项卡
+				//若为iOS平台或非首次显示，则直接显示
+				if(mui.os.ios||aniShow[targetTab]){
+					plus.webview.show(targetTab);
+				}else{
+					//否则，使用fade-in动画，且保存变量
+					var temp = {};
+					temp[targetTab] = "true";
+					mui.extend(aniShow,temp);
+					plus.webview.show(targetTab,"fade-in",300);
+				}
+				//隐藏当前;
+				plus.webview.hide(activeTab);
+				//更改当前活跃的选项卡
+				activeTab = targetTab;
+			});
+			 //自定义事件，模拟点击“首页选项卡”
+			document.addEventListener('gohome', function() {
+				var defaultTab = document.getElementById("defaultTab");
+				//模拟首页点击
+				mui.trigger(defaultTab, 'tap');
+				//切换选项卡高亮
+				var current = document.querySelector(".mui-bar-tab>.mui-tab-item.mui-active");
+				if (defaultTab !== current) {
+					current.classList.remove('mui-active');
+					defaultTab.classList.add('mui-active');
+				}
+			});
+			
+			
+			
+			
+			
+		</script>
+</body>
+</html>

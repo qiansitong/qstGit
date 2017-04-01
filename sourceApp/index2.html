@@ -1,0 +1,636 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/comm.css" />
+    	<link rel="stylesheet" href="css/layout.css" />
+    	<link rel="stylesheet" href="fonts/iconfont.css" />
+    	<style>
+    		a{
+    		color:#b9b9b9 !important;
+    		}
+			.mui-control-content {
+				background-color:white;
+				height:auto;
+				min-height:900px;	
+			}
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+			.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+				border:none;
+			}
+			.mui-table-view:before,.mui-table-view:after{
+    			background:#fff;
+    		}
+    		.radio:first-child{
+    			margin-top:10px;
+    		}
+    		.radio{
+    			margin:0 auto;
+    			width:10px;
+    			height:10px;
+    			border-radius:50%;
+    			background:#e1e1e1;
+    		}
+    		.produce-divider{
+    			margin:0 auto;
+    			width:1px;
+    			height:220px;
+    			background-color:#e1e1e1;
+    		}
+    		.mui-table-view-cell:last-child:after, .mui-table-view-cell:last-child:before{
+    			height:1px !important;
+    		}
+    		.date_button{cursor:pointer;}
+    		.date_content{
+    			position:absolute;
+    			z-index:999;
+    			width:100%;
+    			height:240px;
+    			background:#fff;
+    		}
+    		.mui-segmented-control{
+    			border:none;
+    			border-top:1px solid #c8c8c8;
+    			border-bottom:1px solid #c8c8c8;
+    			background:#fafafa;
+    			border-radius:0;
+    		}
+    		.mui-segmented-control .mui-control-item{
+    			line-height:38px;
+    			border-left:none;
+    		}
+    		.mui-segmented-control .mui-control-item.mui-active{
+    			color:#0f2646 !important;
+				border-bottom: 2px solid #0f2646;
+				background:#fafafa;
+    		}
+    		.icon-active{
+    			color:#0f2646;
+    			
+    		}
+    		.iconfont.down-arrow{
+    			text-align:center;
+    			cursor:pointer;
+    			color:#272636 !important;
+    		}
+    		.mui-table-view-cell.mui-active{
+    			background:#fff !important;
+    		}
+    		.mui-table-view-cell>a.mui-active{
+    			background:#fff !important;
+    		}
+    		.mui-table-view-cell:after{
+    			height:0 !important
+    		}
+    		.mui-table-view-chevron{
+    			padding:0 0 15px 20px;
+    		}
+    		.up-arrow{
+    			text-align:center;
+    			height:30px;
+    		}
+    		.up-arrow .up{
+    			width:17px;
+    			height:17px;
+    			
+    		}
+    		.mui-table-view-cell.mui-collapse .mui-table-view{
+    			margin-bottom:0 !important;
+    		}
+    		.iconfont.vedio{
+    			color:#0f2646;
+    			font-size:24px;
+    			text-align:center;
+    			vertical-align: middle;
+    		}
+		</style>
+	</head>
+
+	<body>
+		
+		<!--主体部分-->
+    	<div class="mui-content">
+    		<!-- 顶部导航 -->
+    		
+				<nav class="mui-segmented-control">
+					<a class="mui-control-item  mui-active" href="#product">
+					产品
+			      	</a>
+					<a class="mui-control-item" href="#produce">
+					生产
+					</a>
+					<a class="mui-control-item" href="#company">
+					商家
+					</a>	
+					<a class="mui-control-item" href="#vertify">
+					质检
+					</a>
+					<a class="mui-control-item" href="#logistic">
+					物流
+					</a>
+					<a class="mui-control-item" href="#price">
+					参考价
+					</a>
+				</nav>
+		
+		
+			<!--产品区域-->
+			<div id="product" class="mui-control-content mui-active">
+				<div class="product-img">
+					<img  src="img/fm.jpg" alt="" />
+				</div>
+				<article class="information-cp">
+	    		<div class="info-item">
+	    			<span>产品名称</span>
+	    			<p>云山葵蜜</p>
+	    		</div>
+	    		<div class="info-item">
+	    			<span >溯源编号</span>
+	    			<p>112568954562</p>
+	    		</div>
+	    		<div class="info-item">
+	    			<span>规格</span>
+	    			<p>350ml/瓶</p>
+	    		</div>
+	    		<div class="info-item">
+	    			<span class="intro-tit">产品描述</span>
+	    			<p class="intro">葵花蜂蜜-向日葵蜜，俗称葵花蜜。浅琥珀色、金黄色。气味浅香带浊。味道甘甜适中，回味微酸，质地浓稠，容易结晶。</p>
+	    		</div>
+	    		<div class="info-item">
+	    			<span class="intro-tit">产品功效</span>
+	    			<p class="intro">具有扩张血管、软化血管、降血压血脂胆固醇、净化血液、对心脑血管有较好的保护作用，同时具清热降火、润肠通便等作用，并可增强机体免疫力，素有蜜中黄金之称</p>
+	    		</div>
+	    		<div class="info-item">
+	    			<span>生产方式</span>
+	    			<p>分离蜜</p>
+	    		</div>
+	    		<div class="info-item">
+	    			<span>生产日期</span>
+	    			<p>2016-04-11</p>
+	    		</div>
+	    		<div class="info-item">
+	    			<span>保质期</span>
+	    			<p>常温下24个月</p>
+	    		</div>
+	    		<div class="info-item">
+	    			<span>储存方法</span>
+	    			<p>宜放置在阴凉、干燥、通风处</p>
+	    		</div>
+	    		</article>	
+    		</div>
+    		
+    		
+    		
+    		<!--生产-->
+    		<div id="produce" class="mui-control-content">
+    			<!--生产信息-->
+		    	<div class="produce-center">
+		    	<!--生产列表-->
+		    	<ul class="mui-table-view" id="produce-content">
+		    		<div class="produce-body mui-clearfix" style="position:relative">
+		    			<!--点击显示日历-->
+				    	<div class="date_button warn">采蜜</div>
+				    	<div class="date_content" style="display:none"></div>
+				    	<!--左边生产线-->
+				    	<div class="produce-line mui-pull-left">
+				    		<div class="radio"></div>
+				    		<div id="produce-divider" class="produce-divider"></div>
+				    		<div class="radio"></div>
+				    	</div>
+				        <!--右边显示图及相关信息-->
+				    	<li class="mui-table-view-cell mui-media produce-item">
+				    		<div class="mui-pull-left produce-img">
+				    			<img src="img/produce1.jpg"/>
+				    			<p class="title">(4.11-5.11)</p>
+				    		</div>
+				    		<div class="produce-detail">
+				    			<p>日期：<b>2016-06-12</b></p>
+				    			<p>时点：<b>光谷步行街D区555号</b></p>
+				    			<p>天气：<b>晴26℃</b></p>
+				    			<p>蜂种：<b>中华蜂</b></p>
+				    			<p>采集蜂数量：<b>1500只</b></p>
+				    			<p>采集地：<b>重庆厘山头村</b></p>
+				    			<p>蜜源：<b>洋槐</b></p>
+				    			<p>负责人：<b>蒋欣欣</b></p>
+				    			<p>联系电话：<b>15866442547</b></p>
+				    			<div class="infor-cust"><a class="collection" href=""></a>
+					    			<b class="coll-num">2345</b>
+					    			<a class="chart" href=""></a>
+					    			<b class="chart-num">2105</b>
+				    			</div>
+				    		</div>
+				    	</li>
+			    	</div>
+			    	<div class="produce-body mui-clearfix">
+			    		<!--点击显示日历-->
+			    		<div class="date_button warn">蜜料</div>
+				    	<div class="date_content" style="display:none"></div>
+				    	<!--左边生产线-->
+				    	<div class="produce-line mui-pull-left">
+				    		<div class="radio"></div>
+				    			<div id="produce-divider" class="produce-divider"></div>
+				    			<div class="radio"></div>
+				    		</div>
+				   		<!--右边显示图及相关信息-->
+		    			<li class="mui-table-view-cell mui-media produce-item">
+		    				<div class="mui-pull-left produce-img">
+		    					<img  src="img/produce2.jpg"/>
+		    					<p class="title">(4.11-5.11)</p>
+		    				</div>
+		    				<div class="produce-detail">
+		    					<p>日期：<b>2016-06-12</b></p>
+		    					<p>时点：<b>光谷步行街D区555号</b></p>
+		    					<p>天气：<b>晴26℃</b></p>
+		    					<p>蜂种：<b>中华蜂</b></p>
+		    					<p>采集蜂数量：<b>1500只</b></p>
+		    					<p>采集地：<b>重庆厘山头村</b></p>
+		    					<p>蜜源：<b>洋槐</b></p>
+		    					<p>负责人：<b>蒋欣欣</b></p>
+		    					<p>联系电话：<b>15866442547</b></p>
+		    				</div>
+		    				<div class="infor-cust"><a class="collection" href=""></a>
+		    					<b class="coll-num">234</b>
+		    					<a class="chart" href=""></a>
+		    					<b class="chart-num">210</b>
+		    				</div>
+		    			</li>
+		    		</div>
+		    		<div class="produce-body mui-clearfix">
+		    			<!--点击显示日历-->
+				    	<div class="date_button warn">加工</div>
+				    	<div class="date_content" style="display:none"></div>
+				    	<!--左边生产线-->
+				    	<div class="produce-line mui-pull-left">
+				    		<div class="radio"></div>
+				    		<div id="produce-divider" class="produce-divider"></div>
+				    		<div class="radio"></div>
+				    	</div>
+				    	<!--右边显示图及相关信息-->
+			    		<li class="mui-table-view-cell mui-media produce-item">
+			    				<div class="mui-pull-left produce-img">
+			    					<img  src="img/xx4.jpg"/>
+			    					<p class="title">(4.11-5.11)</p>
+			    				</div>
+			    				<div class="produce-detail">
+			    					<p>日期：<b>2016-06-12</b></p>
+			    					<p>时点：<b>光谷步行街D区555号</b></p>
+			    					<p>天气：<b>晴26℃</b></p>
+			    					<p>蜂种：<b>中华蜂</b></p>
+			    					<p>采集蜂数量：<b>1500只</b></p>
+			    					<p>采集地：<b>重庆厘山头村</b></p>
+			    					<p>蜜源：<b>洋槐</b></p>
+			    					<p>负责人：<b>蒋欣欣</b></p>
+			    					<p>联系电话：<b>15866442547</b></p>
+			    				</div>
+			    				<div class="infor-cust"><a class="collection" href=""></a>
+			    					<b class="coll-num">234</b>
+			    					<a class="chart" href=""></a>
+			    					<b class="chart-num">210</b>
+			    				</div>
+			    		</li>
+		    		</div>
+		    		
+		    		<div class="produce-body mui-clearfix">
+		    			<!--点击显示日历-->
+				    	<div class="date_button warn">装车</div>
+				    	<div class="date_content" style="display:none"></div>
+				    	<!--左边生产线-->
+				    	<div class="produce-line mui-pull-left">
+				    		<div class="radio"></div>
+				    		<div id="produce-divider" class="produce-divider"></div>
+				    		<div class="radio"></div>
+				    	</div>
+				    	<!--右边显示图及相关信息-->
+		    			<li class="mui-table-view-cell mui-media produce-item">
+		    				<div class="mui-pull-left produce-img">
+		    					<img  src="img/produce3.jpg"/>
+		    					<p class="title">(4.11-5.11)</p>
+		    				</div>
+		    				<div class="produce-detail">
+		    					<p>日期：<b>2016-06-12</b></p>
+		    					<p>时点：<b>光谷步行街D区555号</b></p>
+		    					<p>天气：<b>晴26℃</b></p>
+		    					<p>蜂种：<b>中华蜂</b></p>
+		    					<p>采集蜂数量：<b>1500只</b></p>
+		    					<p>采集地：<b>重庆厘山头村</b></p>
+		    					<p>蜜源：<b>洋槐</b></p>
+		    					<p>负责人：<b>蒋欣欣</b></p>
+		    					<p>联系电话：<b>15866442547</b></p>
+		    				</div>
+		    				<div class="infor-cust"><a class="collection" href=""></a>
+		    					<b class="coll-num">234</b>
+		    					<a class="chart" href=""></a>
+		    					<b class="chart-num">210</b>
+		    				</div>
+		    			</li>
+		    		</div>
+		    		
+		    	</ul>
+		    	
+		     	</div>
+    		</div>
+    		
+    		
+    		<!--商家-->
+    		
+    		<div id="company" class="mui-control-content">
+    			<!-- 轮播介绍 -->
+		    	<section class="img-box">
+		    		<div class="mui-slider">
+					  <div class="mui-slider-group mui-slider-loop">
+					  		<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="img/index3.png" /></a></div>
+						    <div class="mui-slider-item"><a href="#"><img src="img/index1.jpg" /></a></div>
+						    <div class="mui-slider-item"><a href="#"><img src="img/index2.jpg" /></a></div>
+						    <div class="mui-slider-item"><a href="#"><img src="img/index3.png" /></a></div>
+						  	<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="img/index1.jpg" /></a></div>
+					  </div>
+					</div>
+		    	</section>
+		    	<article class="information-sj">
+		    		<div class="info-item">
+		    			<span>商家名称</span>
+		    			<p>举一世家食品科技有限公司</p>
+		    		</div>
+		    		<div class="info-item">
+		    			<span class="intro-tit">商家简介</span>
+		    			<p class="intro">
+		    				举一世家食品科技有限公司是目前国内规模最大、以蜜蜂养殖、蜂产品深加工为主业、集保健品、食品饮料、制药、蜂药、化妆品、房地产、旅游开发等多种产业为一体的大型私营企业，致力于蜂产品在保健、美食、美容和蜂疗等多方面的研究和应用
+		    			</p>
+		    		</div>
+		    		<div class="info-item">
+		    			<span>所属行业</span>
+		    			<p>食品</p>
+		    		</div>
+		    		<div class="info-item">
+		    			<span>保单号</span>
+		    			<p>012345685462</p>
+		    		</div>
+		    		<div class="info-item">
+		    			<span>所在地</span>
+		    			<p>湖北武汉</p>
+		    		</div>
+		    		<div class="info-item">
+		    			<span>联系方式</span>
+		    			<p>027-1245354 15876587458</p>
+		    		</div>
+		    	</article>	
+				<!--图片信息-->
+				<section class="img-info">
+					<p class="img-info-tit">图片信息</p>
+					<div class="imgbox">
+						<img src="img/xx1.jpg" alt="">
+		                <img src="img/xx2.jpg" style="width:90px;" alt="">
+		                <img src="img/xx3.jpg" alt="">
+					</div>
+				</section>
+    		</div>
+			<!--质检-->
+			<div id="vertify" class="mui-control-content">
+				<!--防伪信息展示-->
+			    	<section>
+			    		<ul class="mui-table-view mui-grid-view">
+			    			<li class="mui-table-view-cell mui-media mui-col-xs-6">
+			    				<a href="">
+			    					<div class="mui-media-body">政府认证</div>
+			    					<img class="mui-media-object" src="img/vertify1.jpg" alt="" />	
+			    				</a>
+			    			</li>
+			    			<li class="mui-table-view-cell mui-media mui-col-xs-6">
+			    				<a href="">
+			    					<div class="mui-media-body">第三方认证</div>
+			    					<img class="mui-media-object" src="img/vertify2.jpg" alt="" />
+			    				</a>
+			    			</li>
+			    			<li class="mui-table-view-cell mui-media mui-col-xs-6">
+			    				<a href="">
+			    					<div class="mui-media-body">保险</div>
+			    					<img class="mui-media-object" src="img/vertify1.jpg" alt="" />
+			    				</a>
+			    			</li>
+			    			<li class="mui-table-view-cell mui-media mui-col-xs-6">
+			    				<a href="">
+			    					<div class="mui-media-body">质检</div>
+			    					<img class="mui-media-object" src="img/vertify2.jpg" alt="" />	
+			    				</a>
+			    			</li>
+			    			<li class="mui-table-view-cell mui-media mui-col-xs-6">
+			    				<a href="">
+			    					<div class="mui-media-body">政府认证</div>
+			    					<img class="mui-media-object" src="img/vertify1.jpg" alt="" />
+			    				</a>
+			    			</li>
+			    			<li class="mui-table-view-cell mui-media mui-col-xs-6">
+			    				<a href="">
+			    					<div class="mui-media-body">政府认证</div>
+			    					<img class="mui-media-object" src="img/vertify2.jpg" alt="" />
+			    				</a>
+			    			</li>
+			    		</ul>
+			    	</section>
+			</div>
+			<!--物流-->
+			<div id="logistic" class="mui-control-content">
+				<!--map-->
+	    		<div class="map">
+	    			<img src="img/index2.jpg" alt="" />
+	    			<!--运送信息-->
+	    		
+		    		<div class="trans-information">
+		    			<p class="trans-company">
+		    				<span class="pull-left">物流公司：<b></b>顺丰物流</span>
+		    		        <span class="pull-right"><b class="iconfont vedio">&#xe60e;</b>&nbsp;&nbsp;视频</span>
+		    			</p>
+		    			<div class="trans-content">
+		    				<ul>
+		    					<li>
+		    						<p>2015-03-16 &nbsp;&nbsp;14:08:12</p>
+		    						<p>您的快件已签收</p>
+		    						<li class="mui-table-view-cell mui-collapse">
+		    							<a class="iconfont down-arrow" style="display:block" href="#">&#xe619;</a>
+		    							<ul class="mui-table-view mui-table-view-chevron">
+											<p>物流车牌：WJ18-12345</p>
+											<p>货车司机：罗贯中</p>
+											<p>司机工号：0888208820</p>
+											<p>发货人：吴承恩</p>
+											<p>卸货人：施耐庵</p>
+										</ul>
+										<div class="up-arrow" style="display:none" href="#"><img class="up" src="img/up.png" alt="" /></div>
+		    						</li>
+		    					</li>
+		    					<li>
+		    						<p>2015-03-16 &nbsp;&nbsp;07:08:12</p>
+	    							<p>您所订购的商品已到达【武汉航空中转部】，中转中</p>
+		    						<li class="mui-table-view-cell mui-collapse">
+		    							<a class="iconfont down-arrow" style="display:block" href="#">&#xe619;</a>
+		    							<ul class="mui-table-view mui-table-view-chevron">
+											<p>物流车牌：WJ18-12345</p>
+											<p>货车司机：罗贯中</p>
+											<p>司机工号：0888208820</p>
+											<p>发货人：吴承恩</p>
+											<p>卸货人：施耐庵</p>
+										</ul>
+										<div class="up-arrow" style="display:none" href="#"><img class="up" src="img/up.png" alt="" /></div>
+		    						</li>
+		    					</li>
+		    					<li>
+		    						<p>2015-03-15 &nbsp;&nbsp;19:08:12</p>
+		    						<p>您所订购的商品已从【武汉白沙洲分拣站】发货</p>
+		    						<li class="mui-table-view-cell mui-collapse">
+		    							<a class="iconfont down-arrow" style="display:block" href="#">&#xe619;</a>
+		    							<ul class="mui-table-view mui-table-view-chevron">
+											<p>物流车牌：WJ18-12345</p>
+											<p>货车司机：罗贯中</p>
+											<p>司机工号：0888208820</p>
+											<p>发货人：吴承恩</p>
+											<p>卸货人：施耐庵</p>
+										</ul>
+										<div class="up-arrow" style="display:none" href="#"><img class="up" src="img/up.png" alt="" /></div>
+		    						</li>
+		    					</li>
+		    					<li>
+		    						<p>2015-03-15 &nbsp;&nbsp;19:08:12</p>
+		    						<p>顺丰速递&nbsp;&nbsp;湖北省武汉市白沙洲收件员已揽件</p>
+		    						<li class="mui-table-view-cell mui-collapse">
+		    							<a class="iconfont down-arrow" style="display:block" href="#">&#xe619;</a>
+		    							<ul class="mui-table-view mui-table-view-chevron">
+											<p>物流车牌：WJ18-12345</p>
+											<p>货车司机：罗贯中</p>
+											<p>司机工号：0888208820</p>
+											<p>发货人：吴承恩</p>
+											<p>卸货人：施耐庵</p>
+										</ul>
+										<div class="up-arrow" style="display:none" href="#"><img class="up" src="img/up.png" alt="" /></div>
+		    						</li>
+		    					</li>
+		    					<li>
+		    						<p>2015-03-15 &nbsp;&nbsp;19:08:12</p>
+		    						<p>包裹正在等待收揽</p>
+		    						<li class="mui-table-view-cell mui-collapse">
+		    							<a class="iconfont down-arrow" style="display:block" href="#">&#xe619;</a>
+		    							<ul class="mui-table-view mui-table-view-chevron">
+											<p>物流车牌：WJ18-12345</p>
+											<p>货车司机：罗贯中</p>
+											<p>司机工号：0888208820</p>
+											<p>发货人：吴承恩</p>
+											<p>卸货人：施耐庵</p>
+										</ul>
+										<div class="up-arrow" style="display:none" href="#"><img class="up" src="img/up.png" alt="" /></div>
+		    						</li>
+		    					</li>
+		    					<li></li>
+		    				</ul>
+		    			</div>
+		    		</div>
+	    		</div>
+			</div>
+			<!--参考价-->
+			<div id="price" class="mui-control-content">
+				<!--报价详细信息-->
+				<div class="price-infor">
+					<ul class="mui-table-view">
+			    		<li class="mui-table-view-cell mui-media aliance-item">
+			    				<img class="mui-pull-left" src="img/product1.jpg"/>
+			    				<div class="price-detail">
+			    					<p>商家：<b>大冶葵蜜食品科技有限公司</b></p>
+			    					<p>地址：<b>湖北黄石还幽山路18号</b></p>
+			    					<p>商品：<b>大冶葵蜜</b></p>
+			    					<p>规格：<b>350ml/瓶</b></p>
+			    					<p>电话：<b>13325464578</b></p>
+			    					<p>价格：<b>220.00元/瓶</b></p>
+			    				</div>
+			    			
+			    		</li>
+			    		<li class="mui-table-view-cell mui-media aliance-item">
+			    			
+			    				<img class="mui-pull-left" src="img/product2.jpg"/>
+			    				<div class="price-detail">
+			    					<p>商家：<b>大冶葵蜜食品科技有限公司</b></p>
+			    					<p>地址：<b>湖北黄石还幽山路18号</b></p>
+			    					<p>商品：<b>大冶葵蜜</b></p>
+			    					<p>规格：<b>350ml/瓶</b></p>
+			    					<p>电话：<b>13325464578</b></p>
+			    					<p>价格：<b>220.00元/瓶</b></p>
+			    					
+			    				</div>
+			    			
+			    		</li>
+			    		<li class="mui-table-view-cell mui-media aliance-item">
+			    			
+			    				<img class="mui-pull-left" src="img/product3.jpg"/>
+			    				<div class="price-detail">
+			    					<p>商家：<b>大冶葵蜜食品科技有限公司</b></p>
+			    					<p>地址：<b>湖北黄石还幽山路18号</b></p>
+			    					<p>商品：<b>大冶葵蜜</b></p>
+			    					<p>规格：<b>350ml/瓶</b></p>
+			    					<p>电话：<b>13325464578</b></p>
+			    					<p>价格：<b>220.00元/瓶</b></p>
+			    					
+			    				</div>
+			    			
+			    		</li>
+			    		<li class="mui-table-view-cell mui-media aliance-item">
+			    			
+			    				<img class="mui-pull-left" src="img/product1.jpg"/>
+			    				<div class="price-detail">
+			    					<p>商家：<b>大冶葵蜜食品科技有限公司</b></p>
+			    					<p>地址：<b>湖北黄石还幽山路18号</b></p>
+			    					<p>商品：<b>大冶葵蜜</b></p>
+			    					<p>规格：<b>350ml/瓶</b></p>
+			    					<p>电话：<b>13325464578</b></p>
+			    					<p>价格：<b>220.00元/瓶</b></p>
+			    					
+			    				</div>
+			    			
+			    		</li>
+			    		<li class="mui-table-view-cell mui-media aliance-item">
+			    				<img class="mui-pull-left" src="img/xx4.jpg"/>
+			    				<div class="price-detail">
+			    					<p>商家：<b>大冶葵蜜食品科技有限公司</b></p>
+			    					<p>地址：<b>湖北黄石还幽山路18号</b></p>
+			    					<p>商品：<b>大冶葵蜜</b></p>
+			    					<p>规格：<b>350ml/瓶</b></p>
+			    					<p>电话：<b>13325464578</b></p>
+			    					<p>价格：<b>220.00元/瓶</b></p>
+			    					
+			    				</div>
+			    		</li>
+			    	</ul>
+				</div>
+			</div>
+		</div>  
+					
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			//生产页面日历的出现
+			var cons = mui('.date_content');
+			mui('.date_button').each(function(i, btn){
+				this.addEventListener('tap', function(){
+					if(cons[i].style.display == "none"){
+						cons[i].style.display = "block";
+					}else{
+						cons[i].style.display = "none";
+					}	
+				}, false);
+			});
+			//物流页面js事件
+			mui('body').on('tap','.mui-table-view-cell',function(){
+					var down = this.querySelector('.iconfont.down-arrow');
+			    	var up = this.querySelector('.up-arrow');
+					if(down.style.display == 'block' && up.style.display == 'none'){
+						down.style.display = 'none';
+						up.style.display = 'block';	
+					}else{
+						down.style.display = 'block';
+						up.style.display = 'none';	
+					}
+			})
+		</script>
+	</body>
+
+</html>

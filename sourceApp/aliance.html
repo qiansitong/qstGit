@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商家联盟</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/layout.css">
+    	<link rel="stylesheet" href="css/comm.css" />
+    	<link rel="stylesheet" href="fonts/iconfont.css" />
+    	<script src="js/mui.min.js"></script>	
+    	<style>
+	    	a{
+    		color:#b9b9b9 !important;
+    		}
+    		.mui-table-view:before{background:#fff;}
+    		.mui-table-view-cell{padding-top:0;padding-bottom:0;padding-right:0 !important;}
+    		.box{
+    			width:90px;
+    			margin-top:4px;
+    			padding:5px 0 5px 20px;
+    			display:block;
+    			border:1px solid #d6d7dc;
+    			
+    		}
+    		.box>a{
+    			color:#ccc !important;
+    			padding:0 !important;
+    		}
+    		.box.mui-active{
+    			margin-top:4px !important;
+    			background-color:#fafafa !important;
+    		}
+    		.mui-table-view-cell>a.mui-active{
+    			background:#fff !important;
+    		}
+    		.collapse-body{
+    			width:100%;
+    			z-index:999;
+    			position:absolute;
+    			background:#fafafa;
+    			left:0;
+    			top:38px;
+    		}
+    		.mui-table-view-cell:after{
+    			background:#fff !important;
+    		}
+    		.collapse-body li{
+    			padding-left:15px;
+    			border-bottom:1px solid #eee;
+    		}
+    		.iconfont{
+    			color:#ec4b1f !important;
+    		}
+    		.mui-media a{
+    			margin:0 !important;
+    			
+    		}
+    		.mui-media-body{
+    			padding:10px 0 0 5px;
+    		}
+    		
+    		.mui-media-body p{
+    			height:28px;
+				white-space:nowrap;
+				text-overflow:ellipsis;
+				line-height:28px;
+				font-size:1.2rem;	
+    		}
+    	</style>
+	</head>
+	<body>
+		
+		
+		<!--主体部分-->
+		<div class="mui-content">
+		    <div class="item-information" id="item_info">
+		    	<label>行业分类</label>
+		    	<label >
+		    		<div class="mui-table-view-cell box mui-collapse">
+		    		<a id="select" class="mui-navigate-right" href="javascript:;">全部行业&nbsp;&nbsp;</a>
+            		</div>
+            		<ul id="collapse-body" class="mui-collapse-content collapse-body" style="display:none;">
+		    		  	<li><a>全部行业</a></li>
+		    		  	<li><a href="">食品</a></li>
+		    		  	<li><a href="">药品</a></li>
+		    		  	<li><a href="">护肤品</a></li>
+		    		  	<li><a href="">奢侈品</a></li>
+		    		  	<li><a href="">服装</a></li>
+		    		  	<li><a href="">建材</a></li>
+		    		  	<li><a href="">生活用品</a></li>
+		    		  	<li><a href="">金融理财产品</a></li>
+		    		  </ul>
+		    	</label>
+		    	<label>排序</label>
+		    	<p>
+		    		<span class="selected"><a href="#">默认</a></span>
+		    		<span><a href="#">人气</a></span>
+		    	</p>
+		    	<a id="search" class="search" href="#"></a>
+		    </div>
+		    <div class="aliance-info-content">
+		    	<ul class="mui-table-view">
+		    		<li class="mui-table-view-cell mui-media aliance-item">
+		    			<a href="javascript:;">
+						<img class="mui-pull-left" src="img/xx4.jpg">
+						<div class="mui-media-body">
+							<p class="mui-ellipsis">商家：<b>武汉一品正信科技有限公司</b></p>
+		    				<p class="mui-ellipsis">地址：<b>光谷步行街D区555号</b></p>
+		    				<p class="mui-ellipsis">电话：<b>054-2212345</b></p>
+		    				<p class="collection"><b class="iconfont">&#xe600;</b><b class="collectNum">3600</b></p>
+						</div>
+					  </a>
+		    		</li>
+		    		<li class="mui-table-view-cell mui-media aliance-item">
+		    			<a href="javascript:;">
+		    				<img class="mui-pull-left" src="img/xx4.jpg"/>
+		    				<div class="mui-media-body">
+		    					<p class="mui-ellipsis">商家：<b>武汉一品正信科技有限公司</b></p>
+		    					<p class="mui-ellipsis">地址：<b>光谷步行街D区555号</b></p>
+		    					<p class="mui-ellipsis">电话：<b>054-2212345</b></p>
+		    					<p class="collection"><b class="iconfont">&#xe600;</b><b class="collectNum">3600</b></p>
+		    				</div>
+		    			</a>
+		    		</li>
+		    		<li class="mui-table-view-cell mui-media aliance-item">
+		    			<a href="javascript:;">
+		    				<img class="mui-pull-left" src="img/xx4.jpg"/>
+		    				<div class="mui-media-body">
+		    					<p class="mui-ellipsis">商家：<b>武汉一品正信科技有限公司</b></p>
+		    					<p class="mui-ellipsis">地址：<b>光谷步行街D区555号</b></p>
+		    					<p class="mui-ellipsis">电话：<b>054-2212345</b></p>
+		    					<p class="collection"><b class="iconfont">&#xe600;</b><b class="collectNum">3600</b></p>
+		    				</div>
+		    			</a>
+		    		</li>
+		    		<li class="mui-table-view-cell mui-media aliance-item">
+		    			<a href="javascript:;">
+		    				<img class="mui-pull-left" src="img/xx4.jpg"/>
+		    				<div class="mui-media-body">
+		    					<p class="mui-ellipsis">商家：<b>武汉一品正信科技有限公司</b></p>
+		    					<p class="mui-ellipsis">地址：<b>光谷步行街D区555号</b></p>
+		    					<p class="mui-ellipsis">电话：<b>054-2212345</b></p>
+		    					<p class="collection"><b class="iconfont">&#xe600;</b><b class="collectNum">3600</b></p>
+		    				</div>
+		    			</a>
+		    		</li>
+		    		<li class="mui-table-view-cell mui-media aliance-item">
+		    			<a href="">
+		    				<img class="mui-pull-left" src="img/xx4.jpg"/>
+		    				<div class="mui-media-body">
+		    					<p class="mui-ellipsis">商家：<b>武汉一品正信科技有限公司</b></p>
+		    					<p class="mui-ellipsis">地址：<b>光谷步行街D区555号</b></p>
+		    					<p class="mui-ellipsis">电话：<b>054-2212345</b></p>
+		    					<p class="collection"><b class="iconfont">&#xe600;</b><b class="collectNum">3600</b></p>
+		    				</div>
+		    			</a>
+		    		</li>
+		    	</ul>
+		    </div>
+		    
+		</div>
+		
+		<script type="text/javascript">
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+		   	});
+		   	//行业切换
+			var select = document.getElementById('select');
+			var selectContent = document.getElementById('collapse-body');
+			select.addEventListener('tap',function(){
+				if(selectContent.style.display == 'none'){
+					selectContent.style.display = 'block';
+				}else{
+					selectContent.style.display = 'none';
+				}
+			});
+			
+			//筛选条件切换
+			var item_info = document.getElementById('item_info').getElementsByTagName('p')[0];
+			var conditions = item_info.getElementsByTagName('span');
+			mui.each(conditions,function(i,item){
+				item.addEventListener('tap',function(){
+					mui.each(conditions,function(i,item){
+					item.classList.remove('selected');
+					})
+				  this.classList.add('selected');
+				})
+			});
+			
+			//商家页面点击跳转
+			var details = mui('.aliance-item');
+			mui.each(details,function(i,item){
+				item.addEventListener('tap',function(){
+					mui.openWindow({
+						id:'company',
+						url:'company.html'
+					})
+				})
+			})	
+						
+		</script>
+	</body>
+
+</html>

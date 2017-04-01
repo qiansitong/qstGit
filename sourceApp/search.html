@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>搜索</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="css/comm.css" />
+    	<link href="css/mui.min.css" rel="stylesheet"/>
+    	<style type="text/css">
+    	
+	    	.search-body{
+	    		padding:0 2%;
+	    		border-bottom:1px solid #eee;
+	    	}
+    		.search-body input{
+    			width:82%;
+    			border:none;
+    			margin-bottom:0;
+    			padding-left:24px;
+    			background:url(img/icon/search.png) no-repeat 0 center;
+    			background-size:24px 24px;
+    		}
+    		.search-body button{
+    			height:40px;
+    			border:none;
+    			font-size:1.2rem;
+    			color:#adadad;
+    		}
+    		.content-body{
+    			width:96%;
+    			margin:0 auto;
+    		}
+    		.content-body h5{
+    			line-height:30px;
+    			width:90%;
+    			display:inline-block;
+    		}
+    		.content-body>a{
+    			vertical-align: middle;
+    			width:24px;
+    			height:24px;
+    			display:inline-block;
+    			background:url(img/icon/delete.png) no-repeat 0 center;
+    			background-size:contain;
+    		}
+    		.content-body ul li{
+    			padding-left:30px;
+    		}
+    		.content-body ul>li>a{
+    			color:#333;
+    		}
+    		
+    	</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="search-body">
+			    <input type="text" placeholder="请输入企业名称"/>
+			    <button type="button" id="cancle">取消</button>
+		    </div>
+		    <div class="content-body">
+			   <h5>历史搜索：</h5>
+			   <a href="#"></a>
+			    <ul>
+			    	<li><a href="">原青林公社农业有限公司</a></li>
+			    </ul>
+		</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			
+		</script>
+	</body>
+
+</html>

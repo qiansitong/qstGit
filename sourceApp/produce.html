@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>产品列表</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/layout.css">
+    	<link rel="stylesheet" href="css/comm.css" />
+    	<style>
+    		.mui-table-view:before,.mui-table-view:after{
+    			background:#fff;
+    		}
+    		.radio:first-child{
+    			margin-top:10px;
+    		}
+    		.radio{
+    			margin:0 auto;
+    			width:10px;
+    			height:10px;
+    			border-radius:50%;
+    			background:#e1e1e1;
+    		}
+    		.produce-divider{
+    			margin:0 auto;
+    			width:1px;
+    			background-color:#e1e1e1;
+    		}
+    		.mui-table-view-cell:last-child:after, .mui-table-view-cell:last-child:before{
+    			height:1px !important;
+    		}
+    		.date_button{cursor:pointer;}
+    		.date_content{
+    			position:absolute;
+    			z-index:999;
+    			width:100%;
+    			height:240px;
+    			background:#fff;
+    		}
+    		
+    	</style>
+	</head>
+
+	<body>
+		<!--顶部-->
+		<header id="header" class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">正大溯源云平台</h1>
+		</header>
+		<!--主体部分-->
+		
+		<div class="mui-content">
+		    <!-- 顶部导航 -->
+    		<nav>
+    			<ul>
+    				<li><a href="product.html">产品</a></li>
+    				<li><a href="produce.html" class="active">生产</a></li>
+    				<li><a href="company.html" >商家</a></li>
+    				<li><a href="vertify.html">质检</a></li>
+    				<li><a href="logistic.html">物流</a></li>
+    				<li><a href="price.html">参考价</a></li>
+    			</ul>
+    		</nav>
+		    
+		    <!--生产信息-->
+		    <div class="produce-center">
+		    	<!--生产列表-->
+		    	<ul class="mui-table-view" id="produce-content">
+		    		<div class="produce-body mui-clearfix" style="position:relative">
+		    			<!--点击显示日历-->
+				    	<div class="date_button warn">采蜜</div>
+				    	<div class="date_content" style="display:none"></div>
+				    	<!--左边生产线-->
+				    	<div class="produce-line mui-pull-left">
+				    		<div class="radio"></div>
+				    		<div id="produce-divider" class="produce-divider"></div>
+				    		<div class="radio"></div>
+				    	</div>
+				        <!--右边显示图及相关信息-->
+				    	<li class="mui-table-view-cell mui-media produce-item">
+				    		<div class="mui-pull-left produce-img">
+				    			<img src="img/produce1.jpg"/>
+				    			<p class="title">(4.11-5.11)</p>
+				    		</div>
+				    		<div class="produce-detail">
+				    			<p>日期：<b>2016-06-12</b></p>
+				    			<p>时点：<b>光谷步行街D区555号</b></p>
+				    			<p>天气：<b>晴26℃</b></p>
+				    			<p>蜂种：<b>中华蜂</b></p>
+				    			<p>采集蜂数量：<b>1500只</b></p>
+				    			<p>采集地：<b>重庆厘山头村</b></p>
+				    			<p>蜜源：<b>洋槐</b></p>
+				    			<p>负责人：<b>蒋欣欣</b></p>
+				    			<p>联系电话：<b>15866442547</b></p>
+				    			<div class="infor-cust"><a class="collection" href=""></a>
+					    			<b class="coll-num">2345</b>
+					    			<a class="chart" href=""></a>
+					    			<b class="chart-num">2105</b>
+				    			</div>
+				    		</div>
+				    	</li>
+			    	</div>
+			    	
+			    	<div class="produce-body mui-clearfix">
+			    		<!--点击显示日历-->
+			    		<div class="date_button warn">蜜料</div>
+				    	<div class="date_content" style="display:none"></div>
+				    	<!--左边生产线-->
+				    	<div class="produce-line mui-pull-left">
+				    		<div class="radio"></div>
+				    			<div id="produce-divider" class="produce-divider"></div>
+				    			<div class="radio"></div>
+				    		</div>
+				   		<!--右边显示图及相关信息-->
+		    			<li class="mui-table-view-cell mui-media produce-item">
+		    				<div class="mui-pull-left produce-img">
+		    					<img  src="img/produce2.jpg"/>
+		    					<p class="title">(4.11-5.11)</p>
+		    				</div>
+		    				<div class="produce-detail">
+		    					<p>日期：<b>2016-06-12</b></p>
+		    					<p>时点：<b>光谷步行街D区555号</b></p>
+		    					<p>天气：<b>晴26℃</b></p>
+		    					<p>蜂种：<b>中华蜂</b></p>
+		    					<p>采集蜂数量：<b>1500只</b></p>
+		    					<p>采集地：<b>重庆厘山头村</b></p>
+		    					<p>蜜源：<b>洋槐</b></p>
+		    					<p>负责人：<b>蒋欣欣</b></p>
+		    					<p>联系电话：<b>15866442547</b></p>
+		    				</div>
+		    				<div class="infor-cust"><a class="collection" href=""></a>
+		    					<b class="coll-num">234</b>
+		    					<a class="chart" href=""></a>
+		    					<b class="chart-num">210</b>
+		    				</div>
+		    			</li>
+		    		</div>
+		    		<div class="produce-body mui-clearfix">
+		    			<!--点击显示日历-->
+				    	<div class="date_button warn">加工</div>
+				    	<div class="date_content" style="display:none"></div>
+				    	<!--左边生产线-->
+				    	<div class="produce-line mui-pull-left">
+				    		<div class="radio"></div>
+				    		<div id="produce-divider" class="produce-divider"></div>
+				    		<div class="radio"></div>
+				    	</div>
+				    	<!--右边显示图及相关信息-->
+			    		<li class="mui-table-view-cell mui-media produce-item">
+			    				<div class="mui-pull-left produce-img">
+			    					<img  src="img/xx4.jpg"/>
+			    					<p class="title">(4.11-5.11)</p>
+			    				</div>
+			    				<div class="produce-detail">
+			    					<p>日期：<b>2016-06-12</b></p>
+			    					<p>时点：<b>光谷步行街D区555号</b></p>
+			    					<p>天气：<b>晴26℃</b></p>
+			    					<p>蜂种：<b>中华蜂</b></p>
+			    					<p>采集蜂数量：<b>1500只</b></p>
+			    					<p>采集地：<b>重庆厘山头村</b></p>
+			    					<p>蜜源：<b>洋槐</b></p>
+			    					<p>负责人：<b>蒋欣欣</b></p>
+			    					<p>联系电话：<b>15866442547</b></p>
+			    				</div>
+			    				<div class="infor-cust"><a class="collection" href=""></a>
+			    					<b class="coll-num">234</b>
+			    					<a class="chart" href=""></a>
+			    					<b class="chart-num">210</b>
+			    				</div>
+			    		</li>
+		    		</div>
+		    		
+		    		<div class="produce-body mui-clearfix">
+		    			<!--点击显示日历-->
+				    	<div class="date_button warn">装车</div>
+				    	<div class="date_content" style="display:none"></div>
+				    	<!--左边生产线-->
+				    	<div class="produce-line mui-pull-left">
+				    		<div class="radio"></div>
+				    		<div id="produce-divider" class="produce-divider"></div>
+				    		<div class="radio"></div>
+				    	</div>
+				    	<!--右边显示图及相关信息-->
+		    			<li class="mui-table-view-cell mui-media produce-item">
+		    				<div class="mui-pull-left produce-img">
+		    					<img  src="img/produce3.jpg"/>
+		    					<p class="title">(4.11-5.11)</p>
+		    				</div>
+		    				<div class="produce-detail">
+		    					<p>日期：<b>2016-06-12</b></p>
+		    					<p>时点：<b>光谷步行街D区555号</b></p>
+		    					<p>天气：<b>晴26℃</b></p>
+		    					<p>蜂种：<b>中华蜂</b></p>
+		    					<p>采集蜂数量：<b>1500只</b></p>
+		    					<p>采集地：<b>重庆厘山头村</b></p>
+		    					<p>蜜源：<b>洋槐</b></p>
+		    					<p>负责人：<b>蒋欣欣</b></p>
+		    					<p>联系电话：<b>15866442547</b></p>
+		    				</div>
+		    				<div class="infor-cust"><a class="collection" href=""></a>
+		    					<b class="coll-num">234</b>
+		    					<a class="chart" href=""></a>
+		    					<b class="chart-num">210</b>
+		    				</div>
+		    			</li>
+		    		</div>
+		    		
+		    	</ul>
+		    	
+		    </div>
+		    
+		</div>
+		
+		<!--底部导航-->
+        <footer>
+        	<nav class="mui-bar mui-bar-tab">
+	           <a class="mui-tab-item" href="vertify.html" >
+	           		<span class="mui-icon vertify icons"></span>
+	           		<span class="mui-tab-label words">防伪溯源</span>
+	           </a>
+	           <a class="mui-tab-item" href="aliance.html">
+	           		<span class="mui-icon aliance icons"></span>
+	           		<span class="mui-tab-label words">商家联盟</span>
+	           </a>
+	           <a class="mui-tab-item" href="produce.html">
+	           		<span class="mui-icon product-center-active icons"></span>
+	           		<span class="mui-tab-label words">产品中心</span>
+	           </a>
+	           <a class="mui-tab-item" href="more.html">
+	           		<span class="mui-icon more icons"></span>
+	           		<span class="mui-tab-label words">更多</span>
+	           </a>
+            </nav>
+        </footer>
+		
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui('body').on('tap','a',function(){document.location.href=this.href;});
+			
+			
+			//js方法设置线的高度
+			var divider = document.getElementsByClassName('produce-divider');
+			var itemHeight = document.getElementById('produce-content').getElementsByTagName("li");
+			for(var i=0;i<divider.length;i++)
+				divider[i].style.height = itemHeight[i].offsetHeight+"px";
+		
+		
+	
+			(function($) {
+				$.init();
+				var cons = $('.date_content');
+				var btns = $('.date_button');
+				btns.each(function(i, btn){
+					btn.addEventListener('tap', function(){
+							if(cons[i].style.display == "none"){
+								cons[i].style.display = "block";
+							}else{
+								cons[i].style.display = "none";
+							}	
+						}, false);
+				});
+				
+			})(mui);
+		
+			
+			 
+			    
+		</script>
+	</body>
+
+</html>

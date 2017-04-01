@@ -1,0 +1,178 @@
+{
+  "index.html": {
+    "resources": [
+      "img/icon/product.png",
+      "fonts/iconfont.css",
+      "img/icon/aliance.png",
+      "js/mui.min.js",
+      "css/layout.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "img/icon/more.png",
+      "css/comm.css",
+      "img/icon/vertify2.png",
+      "index2.html",
+      "img/icon/vertify-active.png",
+      "img/icon/vertify.png",
+      "img/icon/more-active.png",
+      "img/icon/product-active.png",
+      "img/icon/aliance-active.png"
+    ],
+    "refer": [
+      "more.html",
+      "product-center.html",
+      "aliance.html",
+      "index2.html"
+    ]
+  },
+  "product-center.html": {
+    "resources": [
+      "img/product3.jpg",
+      "img/product2.jpg",
+      "img/icon/search.png",
+      "img/product1.jpg",
+      "fonts/mui.ttf",
+      "js/mui.min.js",
+      "css/layout.css",
+      "css/mui.min.css",
+      "css/comm.css"
+    ],
+    "refer": [
+      "index2.html"
+    ]
+  },
+  "aliance.html": {
+    "resources": [
+      "fonts/iconfont.woff",
+      "fonts/iconfont.css",
+      "img/xx4.jpg",
+      "img/icon/search.png",
+      "fonts/mui.ttf",
+      "js/mui.min.js",
+      "css/layout.css",
+      "css/mui.min.css",
+      "css/comm.css"
+    ],
+    "refer": [
+      "company.html"
+    ]
+  },
+  "index2.html": {
+    "resources": [
+      "img/produce3.jpg",
+      "img/xx1.jpg",
+      "img/xx3.jpg",
+      "img/vertify1.jpg",
+      "img/fm.jpg",
+      "img/index3.png",
+      "img/xx2.jpg",
+      "img/produce1.jpg",
+      "img/icon/collect.png",
+      "img/icon/chart.png",
+      "img/vertify2.jpg",
+      "img/xx4.jpg",
+      "img/index1.jpg",
+      "img/produce2.jpg",
+      "img/index2.jpg",
+      "img/product3.jpg",
+      "img/product2.jpg",
+      "img/product1.jpg",
+      "img/up.png",
+      "fonts/iconfont.css"
+    ]
+  },
+  "more.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/layout.css",
+      "css/mui.min.css",
+      "css/comm.css",
+      "css/feedback.css",
+      "js/feedback.js",
+      "js/mui.view.js",
+      "fonts/mui.ttf",
+      "img/user.jpg",
+      "fonts/iconfont.css",
+      "fonts/iconfont.woff"
+    ],
+    "refer": [
+      "personal.html",
+      "setting.html"
+    ]
+  },
+  "company.html": {
+    "resources": [
+      "img/xx2.jpg",
+      "js/mui.min.js",
+      "css/layout.css",
+      "fonts/mui.ttf",
+      "img/xx1.jpg",
+      "css/mui.min.css",
+      "img/xx3.jpg",
+      "css/comm.css",
+      "img/index1.jpg",
+      "img/index2.jpg",
+      "img/index3.png"
+    ]
+  },
+  "enter.html": {
+    "resources": [
+      "js/mui.min.js",
+      "img/icon/weixin.png",
+      "css/layout.css",
+      "fonts/mui.ttf",
+      "img/icon/weibo.png",
+      "img/icon/QQ.png",
+      "css/mui.min.css",
+      "img/icon/personal.png",
+      "css/comm.css",
+      "signUp.html"
+    ],
+    "refer": [
+      "index.html",
+      "signUp.html",
+      "find-password.html",
+      "index2.html"
+    ]
+  },
+  "signUp.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/layout.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "img/icon/personal.png",
+      "css/comm.css",
+      "enter.html"
+    ],
+    "refer": [
+      "enter.html"
+    ]
+  },
+  "personal.html": {
+    "resources": [
+      "img/user.jpg",
+      "fonts/iconfont.css",
+      "js/mui.min.js",
+      "css/layout.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/comm.css",
+      "fonts/iconfont.woff"
+    ]
+  },
+  "setting.html": {
+    "resources": [
+      "css/feedback.css",
+      "fonts/mui.ttf",
+      "js/mui.view.js",
+      "js/mui.min.js",
+      "css/layout.css",
+      "css/mui.min.css",
+      "css/comm.css"
+    ],
+    "refer": [
+      "enter.html"
+    ]
+  }
+}

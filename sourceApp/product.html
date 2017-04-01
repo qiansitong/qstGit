@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>产品中心</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/layout.css" />
+		<link rel="stylesheet" href="css/comm.css" />
+		<link rel="stylesheet" href="css/produce.css" />
+	</head>
+
+	<body>
+		<!-- 顶部 -->
+    	<header id="header" class="mui-bar mui-bar-nav">
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href=""></a>
+            <h1 class="mui-title">正大溯源云平台</h1>
+    	</header>
+		
+    	<div class="mui-content">
+    	    <!-- 顶部导航 -->
+			    <nav>
+			    		<ul>
+			    			<li><a href="product.html"  class="active">产品</a></li>
+			    			<li><a href="produce.html" >生产</a></li>
+			    			<li><a href="company.html">商家</a></li>
+			    			<li><a href="vertify.html">质检</a></li>
+			    			<li><a href="logistic.html">物流</a></li>
+			    			<li><a href="price.html">参考价</a></li>
+			    		</ul>
+			    </nav> 
+			<!--图片展示-->
+			<div class="product-img">
+				<img  src="img/fm.jpg" alt="" />
+			</div>
+			<article class="information-cp">
+    		<div class="info-item">
+    			<span>产品名称</span>
+    			<p>云山葵蜜</p>
+    		</div>
+    		<div class="info-item">
+    			<span >溯源编号</span>
+    			<p>112568954562</p>
+    		</div>
+    		<div class="info-item">
+    			<span>规格</span>
+    			<p>350ml/瓶</p>
+    		</div>
+    		<div class="info-item">
+    			<span class="intro-tit">产品描述</span>
+    			<p class="intro">葵花蜂蜜-向日葵蜜，俗称葵花蜜。浅琥珀色、金黄色。气味浅香带浊。味道甘甜适中，回味微酸，质地浓稠，容易结晶。</p>
+    		</div>
+    		<div class="info-item">
+    			<span class="intro-tit">产品功效</span>
+    			<p class="intro">具有扩张血管、软化血管、降血压血脂胆固醇、净化血液、对心脑血管有较好的保护作用，同时具清热降火、润肠通便等作用，并可增强机体免疫力，素有蜜中黄金之称</p>
+    		</div>
+    		<div class="info-item">
+    			<span>生产方式</span>
+    			<p>分离蜜</p>
+    		</div>
+    		<div class="info-item">
+    			<span>生产日期</span>
+    			<p>2016-04-11</p>
+    		</div>
+    		<div class="info-item">
+    			<span>保质期</span>
+    			<p>常温下24个月</p>
+    		</div>
+    		<div class="info-item">
+    			<span>储存方法</span>
+    			<p>宜放置在阴凉、干燥、通风处</p>
+    		</div>
+    	</article>	
+    	</div>
+    	
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui('body').on('tap','a',function(){document.location.href=this.href;});
+		</script>
+	</body>
+
+</html>

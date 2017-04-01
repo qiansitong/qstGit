@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* ==========
+	初始化样式
+============ */
+*{
+	margin: 0;
+	padding: 0;
+}
+b{
+	font-style:normal;
+	font-weight:100 !important;
+}
+ul,li,p{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+	/*color:#b9b9b9 !important;*/
+}
+
+img{
+	border:none;
+}
+
+
+ul{
+	list-style: none;
+}
+.mui-content{
+	background-color:#fff !important;
+	padding-bottom:70px;
+}
+.mui-bar{
+	box-shadow:none;
+}
+
+body{
+	background-color:#FFFFFF !important;
+}
+
+.pull-left{
+	float:left;
+}
+.pull-right{
+	float:right;
+}
+
+@media only screen and (max-width: 320px){html{font-size: 9px;} }
+@media only screen and (min-width: 320px) and (max-width: 352px){html{font-size: 10px;} }
+@media only screen and (min-width: 352px) and (max-width: 384px){html{font-size: 11px;} }
+@media only screen and (min-width: 384px) and (max-width: 416px){html{font-size: 12px;} }
+@media only screen and (min-width: 416px) and (max-width: 448px){html{font-size: 13px;} }
+@media only screen and (min-width: 448px) and (max-width: 480px){html{font-size: 14px;} }
+@media only screen and (min-width: 480px) and (max-width: 512px){html{font-size: 15px;} }
+@media only screen and (min-width: 512px) and (max-width: 544px){html{font-size: 16px;} }
+@media only screen and (min-width: 544px) and (max-width: 576px){html{font-size: 17px;} }
+@media only screen and (min-width: 576px) and (max-width: 608px){html{font-size: 18px;} }
+@media only screen and (min-width: 608px) and (max-width: 640px){html{font-size: 19px;} }
+@media only screen and (min-width: 640px){html{font-size: 20px;} }
+
+
+
+@media only screen and (min-width:321px){
+	html{
+		font-size:12px;
+    }
+    img{
+    	font-size:14px;
+    }
+}
+
+@media only screen and (min-width:721px){
+	html{
+		font-size:16px;
+    }
+    img{
+    	font-size:22px;
+    }
+}
+
+
+/*=========
+ 	顶部
+ ===========*/
+#header {
+	box-shadow:none;
+	background-color:#fff;
+}
+
+#header a{
+	color:#000000;
+}
+
+#header h1{
+	font-weight:bold;
+}
+
+
+/*==========
+	顶部导航
+===========*/
+nav{
+	height:38px;
+	border-top:1px solid #c8c8c8;
+	border-bottom:1px solid #c8c8c8;
+	display:block;
+	width:100%;
+	background:#fafafa;
+	z-index:99999;
+	
+
+}
+nav ul{
+	display:-moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display:-ms-flexbox;  /* TWEENER - IE 10 */
+	display:-webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+	display:-webkit-flex;  /* NEW - Chrome */
+	display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+nav ul li{
+	padding:0 5px;
+	height:38px;
+	text-align:center;
+	-webkit-box-flex:1; /* OLD - iOS 6-, Safari 3.1-6 */
+	-webkit-flex:1; /* Chrome */
+	-ms-flex:1;  /* IE 10 */
+	-moz-box-flex:1;  /* OLD - Firefox 19- */
+	flex:1;  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+/*nav ul li:last-child{
+	padding:0;
+}*/
+nav ul li a{
+	height:37px;
+	line-height:37px;
+	display: block;
+	color: #646464;
+	font-size:1.4rem;
+}
+
+nav .active{
+	color:#0f2646 !important;
+	border-bottom: 2px solid #0f2646;
+}
+
+
+
+/* =======
+	底部导航
+========= */
+
+footer{
+	margin-top:20px;
+	width:100%;	
+	position:fixed;
+	bottom:0;
+	left:0;
+	background:#ffffff;
+	z-index:9999;
+}
+.footer-nav{
+	display:-moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display:-ms-flexbox;  /* TWEENER - IE 10 */
+	display:-webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+	display:-webkit-flex;  /* NEW - Chrome */
+	display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.bottom-nav-item{
+	-webkit-box-flex:1; /* OLD - iOS 6-, Safari 3.1-6 */
+	-webkit-flex:1; /* Chrome */
+	-ms-flex:1;  /* IE 10 */
+	-moz-box-flex:1;  /* OLD - Firefox 19- */
+	flex:1;  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	text-align: center;
+}
+.icon-list{
+	margin:5px auto;
+	width:30px;
+	height:30px;
+}
+.icon-tit{
+	font-size: 1.2rem;
+}
+.mui-tab-item img{
+	width:24px;
+	height:24px;
+}

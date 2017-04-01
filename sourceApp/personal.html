@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/layout.css" />
+		<link rel="stylesheet" href="css/comm.css" />
+		<link rel="stylesheet" href="fonts/iconfont.css" />	
+		<style>
+			.iconfont{
+				color:#ec4b1f !important;
+				font-size:22px !important;
+			}
+			
+			.mui-table-view-cell:after{
+				right:15px !important;
+			}
+
+			.mui-table-view-cell>a{
+				color:#323232 !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--顶部-->
+		<header id="header" class="mui-bar mui-bar-nav">
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href=""></a>
+            <h1 class="mui-title">个人中心</h1>
+    	</header>
+    	
+    	<div class="mui-content">
+    	    <div class="intro-box">
+    	    	<div class="intro-box-img">
+    	    		<div class="img-radius"><img src="img/user.jpg" alt="" /></div>
+    	    		<div class="username"><h3>Summer</h3></div>
+    	    	</div>
+    	    	<div class="intro-box-tit">
+    	    		<span>消息：&nbsp;<b>2</b></span>
+    	    		<span class="iconfont">&#xe640;</span>
+    	    		<span>积分：&nbsp;<b>56</b></span>
+    	    	</div>
+    	    	<div>
+    	    		<ul class="mui-table-view">
+    	    			<li class="mui-table-view-cell"><a href="find-password.html">账号管理</a></li>
+    	    			<li class="mui-table-view-cell"><a href="">历史资料</a></li>
+    	    			<li class="mui-table-view-cell"><a href="">我的收藏</a></li>
+    	    			<li class="mui-table-view-cell"><a href="">个人资料</a></li>
+    	    		</ul>
+    	    	</div>
+    	    </div>
+    	</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui('body').on('tap','a',function(){document.location.href=this.href;});
+		</script>
+	</body>
+
+</html>
